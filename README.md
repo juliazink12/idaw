@@ -1,2 +1,2 @@
-# idaw
+# Julia Zink - idaw
 Repository for the IDAW module (March 2022)
