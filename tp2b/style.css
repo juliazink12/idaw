@@ -1,0 +1,76 @@
+h1{
+    font-family: -apple-system-headline, BlinkMacSystemFont, sans-serif;
+    color: #4f0ae2;
+}
+
+h2{
+    font-family: -apple-system-subheadline, BlinkMacSystemFont, sans-serif;
+    color: #9d7de2;
+}
+
+p{
+    font-family: -apple-system-body, BlinkMacSystemFont, sans-serif;
+}
+
+.conteneur-flexible{
+    display: flex;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    box-sizing: border-box;
+    margin: 20px 0px;
+}
+.ligne{
+    flex-direction: row; /*Axe principal = axe horizontal*/
+}
+.ligne-inverse{
+    flex-direction: row-reverse; /*Axe principal = axe horizontal*/
+}
+.colonne{
+    flex-direction: column; /*Axe principal = axe vertical*/
+}
+.colonne-inverse{
+    flex-direction: column-reverse; /*Axe principal = axe vertical*/
+}
+.element-flexible{
+    flex-basis: 25%;
+    width: 25%;
+    height: 25%;
+    background-color: #eee6ff; /*Vert*/
+    padding: 10px 0px;
+    text-align: center;
+    border: 2px solid #eee6ff;
+    box-sizing: border-box;
+    margin: 5px;
+}
+
+.content {
+    max-width: 1000px;
+    margin: auto;
+}
+
+#footer {
+    text-align: center;
+    position:fixed;
+    bottom:0;
+    width:100%;
+    height:60px;
+} 
+
+footer>p {
+    font-family: -apple-system-body, BlinkMacSystemFont, sans-serif;
+    font-style: italic;
+    text-align: center;
+}
+
+#currentpage {
+     background-color:#cfb9ff;
+}
+
+/*
+Pour menu flottant en barre verticale à gauche
+.bloc_menu {
+    widht: 200px;
+    float: left;
+}
+*/
