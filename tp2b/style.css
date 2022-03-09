@@ -21,22 +21,22 @@ p{
     margin: 20px 0px;
 }
 .ligne{
-    flex-direction: row; /*Axe principal = axe horizontal*/
+    flex-direction: row;
 }
 .ligne-inverse{
-    flex-direction: row-reverse; /*Axe principal = axe horizontal*/
+    flex-direction: row-reverse;
 }
 .colonne{
-    flex-direction: column; /*Axe principal = axe vertical*/
+    flex-direction: column;
 }
 .colonne-inverse{
-    flex-direction: column-reverse; /*Axe principal = axe vertical*/
+    flex-direction: column-reverse;
 }
 .element-flexible{
     flex-basis: 25%;
     width: 25%;
     height: 25%;
-    background-color: #eee6ff; /*Vert*/
+    background-color: #eee6ff;
     padding: 10px 0px;
     text-align: center;
     border: 2px solid #eee6ff;
@@ -46,6 +46,11 @@ p{
 
 .content {
     max-width: 1000px;
+    margin: auto;
+}
+
+.contentb {
+    max-width: 800px;
     margin: auto;
 }
 

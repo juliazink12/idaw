@@ -1,9 +1,10 @@
 <body>
-    <div class="content">
+    <div class="contentb">
         <h1>Hobbies</h1>
-        <p>Photography<br></p>
-        <h2>Dublin</h2>
-        <p>Septembre 2021 - Janvier 2022</p>
+        <h2>Photography</h2>
+        <p>Dublin (September 2021 - January 2022)</p>
+    </div>
+    <div class="content">
         <section>
             <img src="images/img11.jpeg" alt="Trinity" style="width:1008px;height:756px;">
             <img src="images/img1.jpeg" alt="North Bull Island" style="width:1008px;height:756px;">

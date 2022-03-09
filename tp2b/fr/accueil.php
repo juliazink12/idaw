@@ -1,5 +1,5 @@
 <body>
-    <div class="content">
+    <div class="contentb">
         <h1>Accueil</h1>
         <p>Julia Zink - mars 2022</p>
         <h2>CV</h2>
