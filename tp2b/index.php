@@ -1,4 +1,5 @@
 <?php
+
     $currentPageId = 'accueil';
     $currentLangId = 'fr';
     if(isset($_GET['page'])) {
@@ -8,8 +9,8 @@
         $currentLangId = $_GET['lang'];
     }
 
-    require_once("template_header.php");
-    require_once("template_menu.php");
+    require_once($currentLangId . '/template_header.php');
+    require_once($currentLangId . '/template_menu.php');
 
     renderMenu($currentPageId, $currentLangId);
 
@@ -21,5 +22,5 @@
         require_once("error.php");
     }
 
-    require_once('template_footer.php');
+    require_once("$currentLangId . 'template_footer.php'");
 ?>
