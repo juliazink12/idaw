@@ -14,6 +14,7 @@
                         echo " id='currentpage'";
                     echo "><a href=index.php?page=".$pageparameters[0]."&lang=".$currentlang."><p>".$pageparameters[1]."</p></a></div>";
                 }
+                echo "<div class='element-flexible'><a href=index.php?page=login&lang=en><p>Login</p></a></div>";
                 echo "<div class='element-flexible'><a href=index.php?page=".$currentpage."&lang=fr><p>Français</p></a></div>";
             echo "</div>";
         echo "</div>";

@@ -22,5 +22,20 @@
         require_once("error.php");
     }
 
+?>
+
+<html>
+    <form id="style_form" action="index.php" method="GET">
+        <select name="css">
+            <option value="style1">Purple</option>
+            <option value="style2">Blue</option>
+        </select>
+        <input type="submit" value="Appliquer" />
+    </form>
+</html>
+
+<?php
+
     require_once($currentLangId . '/template_footer.php');
+
 ?>
