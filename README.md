@@ -19,7 +19,11 @@ b) Utilisation de GET
  - Pages en anglais
 
 # TP3
-Requêtes et transmission de données
+a) Requêtes et transmission de données
  - Formulaires GET et POST
  - Cookies
  - Sessions
+b) DB
+ - Connexion à une base de données
+ - Affichage de données
+ - Addition de données à une table
