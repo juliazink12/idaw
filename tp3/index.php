@@ -1,4 +1,14 @@
 <?php
+    session_start();
+    if ($_SESSION['login'] == 'true') {
+        echo "Logged in as: " . $_SESSION['login_user'];
+    }
+    else {
+        echo "Not logged in";
+    }
+?>
+
+<?php
 
     $currentPageId = 'accueil';
     $currentLangId = 'fr';
