@@ -1,5 +1,14 @@
 <body>
     <div class="content">
+
+    <!--
+        <(?)php if(): ?>
+            //si connecte afficher deconnexion
+        <(?)php else: ?>
+            //sinon afficher connexion
+        <(?)php endif ?>
+        -->
+
         <div class='conteneur-flexible ligne'>
             <div class='element-flexible'>
                 <form id="login_form" action="connected.php" method="POST">
