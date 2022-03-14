@@ -9,6 +9,7 @@ Premier site en html/css
  - Test bootstrap  
 
 # TP2
+Utilisation de php
 a) Factorisation avec php
  - Fichiers communs header et footer
  - Génération du menu
@@ -16,3 +17,9 @@ a) Factorisation avec php
 b) Utilisation de GET
  - Index commun
  - Pages en anglais
+
+# TP3
+Requêtes et transmission de données
+ - Formulaires GET et POST
+ - Cookies
+ - Sessions
