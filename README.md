@@ -23,6 +23,7 @@ a) Requêtes et transmission de données
  - Formulaires GET et POST
  - Cookies
  - Sessions
+
 b) DB
  - Connexion à une base de données
  - Affichage de données
