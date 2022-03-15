@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset='utf-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style1.css">
+        <title>tabletest</title>
+        <!--
+        <style>
+            body{ margin-top: 5em; }
+            .table {
+                margin-top: 100px;
+                margin-bottom: 100px;
+            }
+        </style>
+        -->
+    </head>
+    <body>
+        <div class="content">
+            <table border="1" align="center">
+                <thead>
+                    <tr>
+                        <th scope="col">Nom</th>
+                        <th scope="col">Prenom</th>
+                        <th scope="col">Date de naissance</th>
+                        <th scope="col">Aime le cours Web</th>
+                        <th scope="col">Remarques</th>
+                        <th scope="col">CRUD</th>
+                    </tr>
+                </thead>
+                <tbody id="studentsTableBody">
+                </tbody>
+            </table>
+            <form id="addStudentForm" action="" onsubmit="onFormSubmit();">
+                <div class="form-group row">
+                    <label for="inputNom" class="col-sm-2 col-form-label">Nom*</label>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" id="inputNom" >
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPrenom" class="col-sm-2 col-form-label">Prénom</label>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" id="inputPrenom" >
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputDate" class="col-sm-2 col-form-label">Date de naissance</label>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" id="inputDate" >
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputAimeCours" class="col-sm-2 col-form-label">Aime le cours web</label>
+                    <div class="col-sm-3">
+                        <input type="checkbox" class="form-control" id="inputAimeCours" >
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputRemarques" class="col-sm-2 col-form-label">Remarques</label>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" id="inputRemarques" >
+                    </div>
+                </div>
+                <!--...-->
+                <div class="form-group row">
+                    <span class="col-sm-2"></span>
+                    <div class="col-sm-2">
+                        <button type="submit" class="btn btn-primary form-control">Submit</button>
+                    </div>
+                </div>
+            </form>
+            <script>
+                $("#studentsTableBody").append(`<tr><td>Zink</td><td>Julia</td><td>27/09/2001</td><td>true</td><td>hey</td><td><input type="button" value="Delete" onclick="deleteRow(this)"/><input type="button" value="Edit" onclick="editRow(this)"/></td></tr>`);
+                function onFormSubmit() {
+                    // prevent the form to be sent to the server
+                    event.preventDefault();
+                    let nom = $("#inputNom").val();
+                    let prenom = $("#inputPrenom").val();
+                    let date = $("#inputDate").val();
+                    let aimeCours = $("#inputAimeCours").prop('checked');
+                    let remarques = $("#inputRemarques").val();
+                    if(nom.length>=1){
+                        $("#studentsTableBody").append(`<tr><td>${nom}</td><td>${prenom}</td><td>${date}</td><td>${aimeCours}</td><td>${remarques}</td><td><input type="button" value="Delete" onclick="deleteRow(this)"/><input type="button" value="Edit" onclick="editRow(this)"/></td></tr>`);
+                    }
+                }
+                function deleteRow(btn) {
+                    var row = btn.parentNode.parentNode;
+                    row.parentNode.removeChild(row);
+                }
+            </script>
+        </div>
+    </body>
+</html>
