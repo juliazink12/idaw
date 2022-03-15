@@ -10,6 +10,7 @@ Premier site en html/css
 
 # TP2
 Utilisation de php
+
 a) Factorisation avec php
  - Fichiers communs header et footer
  - Génération du menu
