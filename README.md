@@ -28,3 +28,11 @@ b) DB
  - Connexion à une base de données
  - Affichage de données
  - Addition de données à une table
+
+# TP4
+Utilisation de JS
+a) CRUD
+ - Affichage de tableau html
+ - Form pour ajouter une entrée
+ - Fonction delete
+ - Edit/save
